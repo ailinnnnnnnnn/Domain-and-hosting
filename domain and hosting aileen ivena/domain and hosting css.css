@@ -1,0 +1,96 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #f5f7fb;
+  color: #1f1d1e;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 36px auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(20,24,40,0.06);
+}
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(90deg, #ff88ca, #ff88ca);
+  padding: 14px 20px;
+  box-shadow: 0 4px 14px rgba(2,6,23,0.12);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: rgba(255,255,255,0.92);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 200ms ease;
+}
+
+.navbar a:hover {
+  background: #ff88ca;
+  transform: translateY(-2px);
+}
+
+.navbar a.active {
+  background: linear-gradient(90deg, #ff88ca;
+  color: white;
+  box-shadow: 0 6px 20px#ff88ca;
+}
+
+h1 { font-size: 28px; margin-bottom: 8px; }
+h2 { font-size: 20px; margin-top: 18px; margin-bottom: 8px; color: #0f172a; }
+
+.content p { margin-bottom: 14px; color: #ff88ca; }
+.content ul, .content ol { margin-left: 20px; margin-bottom: 14px; }
+.content li { margin-bottom: 8px; }
+
+.content code {
+  background-color: #0f172a11;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+}
+
+@media (max-width: 880px) {
+  .navbar ul { gap: 10px; padding: 0 6px; flex-wrap: wrap; }
+  .content { margin: 20px 16px; padding: 20px; }
+  h1 { font-size: 22px; }
+}
+
+@media (max-width: 520px) {
+  .navbar { padding: 12px 8px; }
+  .navbar a { font-size: 14px; padding: 8px 10px; }
+  .content { padding: 16px; }
+}
+
+.text-muted { color: #64748b; }
+.center { text-align: center; }
+.kartu {
+  background: linear-gradient(180deg, #ffffff, #fbfdff);
+  padding: 18px; border-radius: 10px; box-shadow: 0 8px 24px rgba(15,23,42,0.04);
+}
+
+.footer {
+  text-align: center; padding: 28px 12px; color: #94a3b8; font-size: 14px;
+}
+
+
